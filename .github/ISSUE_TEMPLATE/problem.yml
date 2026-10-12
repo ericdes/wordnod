@@ -1,0 +1,34 @@
+name: Report a problem
+description: Something went wrong in the viewer.
+labels: [problem]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Filled in by « Report a problem… »; otherwise Settings › Copy version, or « Pro » in the title bar.
+    validations:
+      required: true
+  - type: textarea
+    id: did
+    attributes:
+      label: What you did
+      description: Step by step, as short as you like.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: About the build
+      description: Filled in by « Report a problem… » (build date, Windows, install and session ids). Leave as it is.
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Drag the newest file of the log folder here (the folder opened with the form). It holds file names and what the viewer did, never the words of your documents.
